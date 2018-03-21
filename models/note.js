@@ -8,4 +8,4 @@ let notesSchema = new mongoose.Schema({
   created: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model('Note', noteSchema); 
+module.exports = mongoose.model('Note', notesSchema); 
