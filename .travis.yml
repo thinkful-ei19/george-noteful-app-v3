@@ -1,13 +1,15 @@
 language: node_js
 node_js: node
 env:
-  - NODE_ENV=test
-# services:
-#   - [DATABASE-TYPE]
-# deploy:
-#   provider: heroku
-#   api_key:
-#     secure: [YOUR-API-KEY]
-#   app: [YOUR-APP-NAME]
-#   on:
-#     repo: [YOUR-APP-REPO]
+- NODE_ENV=test 
+
+services: 
+  - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: kvGobkmyhDdNSeoMqhUs/h0yziaPdMMTTauezezIGg+k6a1BZJVsZkU1Vm1TGbwL1KuCPYuPxwt/g4EJCg/+INBPZ0uNH89X8VM6LOuQCExAvXDfY+rjbqhSXuiMckKoEyPjhcry/TmWe9JXc2ZUKzQUmCRuG1FYOJQsDaRKHD1P/AzPICb1PxIi0eMCBrdkZmX+SAXWSvDtwLXHVSdxp0PtJrgbRFymotm5bbbFRMumfqvpTHyXBD3AADdZ7uZW0gP3v6EtXFdJOY9ZsQgQreDgt/559dI5TuZvNdjZ5/ZVrevkMvD8soSeiJcU2hFZigdtgqo0viHghc7uZmBWRrvQPVmjC54VflJgx8AJSLKiwZorvb78LSoit4XMyqkmylEMIZ3vz0Tgok9l4wYfaNjCOYi8YZ3Iw3u79ndpmtENsOuuu0HwmBdu+eXjnDm7Q9rMfGKfFLccUw/ULGGaa7YySvy1a3cE1MQ01rPb/Ei1tfjHqaCTNVNYzAUvsYt4JEah8MiIK4nF0VYW8Bqp57MnG0zEzCgVQ7cJdHL6C//mjhN5URumlV188qy6MooN+cD4EdENIkP1VG2JsLTtHnXAC4yY8MwRpDAUryZrqkxPbIQpVKbZXiGO5kvEu2wjwhK+iVWwNIvYy2pTKIGBp49KXX+Z1sxKNxKPRE7z8Io=
+  app: powerful-brook-51645
+  on:
+    repo: thinkful-ei19/george-noteful-app-v3
+    branch: sol-mongoose
